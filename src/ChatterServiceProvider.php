@@ -40,8 +40,6 @@ class ChatterServiceProvider extends ServiceProvider
             __DIR__.'/Views' => resource_path('views/vendor/chatter'),
         ], 'chatter_views');
 
-        // include the routes file
-        include __DIR__.'/Routes/web.php';
     }
 
     /**
@@ -51,6 +49,7 @@ class ChatterServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        // include the routes file
+        include __DIR__.'/Routes/web.php';
     }
 }
